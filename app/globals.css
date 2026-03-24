@@ -1,5 +1,3 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,102 +27,20 @@
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: var(--black); }
   ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 }
 
 @layer components {
-  .pearl-gold-text {
-    background: var(--pearl-gold);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: pearlShimmer 4s ease infinite;
-  }
-  .pearl-gold-bg {
-    background: var(--pearl-gold);
-    background-size: 200% 200%;
-    animation: pearlShimmer 4s ease infinite;
-  }
-  .glass-dark {
-    background: rgba(14,12,9,0.7);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(184,137,42,0.1);
-  }
-  .card-tanjun {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(184,137,42,0.12);
-    border-radius: var(--radius-xl);
-    transition: all var(--transition-base);
-  }
-  .card-tanjun:hover {
-    border-color: rgba(184,137,42,0.35);
-    box-shadow: 0 8px 40px rgba(184,137,42,0.12);
-    transform: translateY(-2px);
-  }
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 2rem;
-    background: var(--pearl-gold);
-    background-size: 200% 200%;
-    animation: pearlShimmer 4s ease infinite;
-    color: var(--black);
-    font-weight: 700;
-    font-size: 0.9375rem;
-    border-radius: var(--radius-md);
-    border: none;
-    cursor: pointer;
-    transition: transform var(--transition-spring), box-shadow var(--transition-base);
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  .btn-primary:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 32px rgba(184,137,42,0.5);
-  }
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 2rem;
-    background: transparent;
-    color: var(--gold-bright);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    border-radius: var(--radius-md);
-    border: 1px solid rgba(184,137,42,0.4);
-    cursor: pointer;
-    transition: all var(--transition-base);
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  .btn-outline:hover {
-    background: rgba(184,137,42,0.08);
-    border-color: var(--gold-bright);
-    transform: translateY(-1px);
-  }
-  .badge-gold {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.375rem 0.875rem;
-    background: rgba(184,137,42,0.1);
-    border: 1px solid rgba(184,137,42,0.25);
-    border-radius: 999px;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--gold-bright);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  .divider-gold {
-    height: 1px;
-    background: linear-gradient(90deg,transparent,rgba(184,137,42,0.4),transparent);
-  }
+  .pearl-gold-text { background: var(--pearl-gold); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: pearlShimmer 4s ease infinite; }
+  .pearl-gold-bg { background: var(--pearl-gold); background-size: 200% 200%; animation: pearlShimmer 4s ease infinite; }
+  .glass-dark { background: rgba(14,12,9,0.7); backdrop-filter: blur(20px); border: 1px solid rgba(184,137,42,0.1); }
+  .card-tanjun { background: rgba(255,255,255,0.02); border: 1px solid rgba(184,137,42,0.12); border-radius: var(--radius-xl); transition: all var(--transition-base); }
+  .card-tanjun:hover { border-color: rgba(184,137,42,0.35); box-shadow: 0 8px 40px rgba(184,137,42,0.12); transform: translateY(-2px); }
+  .btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 2rem; background: var(--pearl-gold); background-size: 200% 200%; animation: pearlShimmer 4s ease infinite; color: var(--black); font-weight: 700; font-size: 0.9375rem; border-radius: var(--radius-md); border: none; cursor: pointer; transition: transform var(--transition-spring), box-shadow var(--transition-base); white-space: nowrap; text-decoration: none; }
+  .btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 32px rgba(184,137,42,0.5); }
+  .btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 2rem; background: transparent; color: var(--gold-bright); font-weight: 600; font-size: 0.9375rem; border-radius: var(--radius-md); border: 1px solid rgba(184,137,42,0.4); cursor: pointer; transition: all var(--transition-base); white-space: nowrap; text-decoration: none; }
+  .btn-outline:hover { background: rgba(184,137,42,0.08); border-color: var(--gold-bright); transform: translateY(-1px); }
+  .badge-gold { display: inline-flex; align-items: center; gap: 0.375rem; padding: 0.375rem 0.875rem; background: rgba(184,137,42,0.1); border: 1px solid rgba(184,137,42,0.25); border-radius: 999px; font-size: 0.8125rem; font-weight: 600; color: var(--gold-bright); letter-spacing: 0.04em; text-transform: uppercase; }
+  .divider-gold { height: 1px; background: linear-gradient(90deg,transparent,rgba(184,137,42,0.4),transparent); }
   .container-tanjun { max-width: 1200px; margin: 0 auto; width: 100%; }
   .section-padding { padding: 6rem 1.5rem; }
   .heading-display { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
