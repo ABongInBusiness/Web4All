@@ -1,7 +1,1 @@
-// app/(dashboard)/dashboard/whats-new/page.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function WhatsNewPage() { return <div style={{padding:"4rem"}}><h1>What's New</h1></div>; }

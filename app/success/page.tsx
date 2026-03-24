@@ -1,7 +1,1 @@
-// app/success/page.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function SuccessPage() { return <div style={{padding:"4rem",color:"#F2EBDC",background:"#0E0C09",minHeight:"100vh",textAlign:"center"}}><h1>Payment Successful!</h1><p>Check your email for the GST invoice.</p></div>; }

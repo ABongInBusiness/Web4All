@@ -1,7 +1,1 @@
-// app/(admin)/admin/tickets/page.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function AdminTicketsPage() { return <div style={{padding:"4rem"}}><h1>Support Tickets</h1></div>; }

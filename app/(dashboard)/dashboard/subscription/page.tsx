@@ -1,7 +1,1 @@
-// app/(dashboard)/dashboard/subscription/page.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function SubscriptionPage() { return <div style={{padding:"4rem"}}><h1>Subscription</h1></div>; }

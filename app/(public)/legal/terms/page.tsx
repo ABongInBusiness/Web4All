@@ -1,7 +1,1 @@
-// app/(public)/legal/terms/page.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function TermsPage() { return <div style={{padding:"4rem",color:"#F2EBDC",background:"#0E0C09",minHeight:"100vh"}}><h1>Terms of Service</h1></div>; }

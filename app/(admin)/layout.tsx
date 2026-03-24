@@ -1,7 +1,1 @@
-// app/(admin)/layout.tsx
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+export default function AdminLayout({ children }: { children: React.ReactNode }) { return <div style={{background:"#0E0C09",minHeight:"100vh",color:"#F2EBDC"}}>{children}</div>; }

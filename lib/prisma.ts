@@ -1,7 +1,4 @@
-// lib/prisma.ts
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+import { PrismaClient } from "@prisma/client";
+const g = globalThis as unknown as { prisma: PrismaClient };
+export const prisma = g.prisma ?? new PrismaClient({ log: process.env.NODE_ENV === "development" ? ["error"] : ["error"] });
+if (process.env.NODE_ENV !== "production") g.prisma = prisma;

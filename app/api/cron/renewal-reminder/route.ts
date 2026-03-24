@@ -1,7 +1,5 @@
-// app/api/cron/renewal-reminder/route.ts
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
+import { NextRequest, NextResponse } from "next/server";
+export async function GET(req: NextRequest) {
+  if (req.headers.get("authorization") !== `Bearer ${process.env.CRON_SECRET}`) return NextResponse.json({ error:"Unauthorized" }, { status:401 });
+  return NextResponse.json({ success:true, remindersSent:0 });
 }

@@ -1,7 +1,2 @@
-// app/api/contact/route.ts
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
-
-export default function Placeholder() {
-  return null
-}
+import { NextRequest, NextResponse } from "next/server";
+export async function POST(req: NextRequest) { return NextResponse.json({ success:true }); }
