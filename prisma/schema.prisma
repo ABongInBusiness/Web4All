@@ -1,6 +1,4 @@
-generator client {
-  provider = "prisma-client-js"
-}
+// This file is correct — no changes needed here
 
 datasource db {
   provider = "postgresql"
