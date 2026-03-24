@@ -8,7 +8,58 @@ const config: Config = {
     "./features/**/*.{js,ts,jsx,tsx,mdx}",
     "./lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./store/**/*.{js,ts,jsx,tsx,mdx}",
-    "./config/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  safelist: [
+    // Layout
+    "flex","hidden","block","inline","inline-flex","grid","relative","absolute","fixed","sticky",
+    "flex-col","flex-row","flex-wrap","flex-1","flex-shrink-0",
+    "items-center","items-start","items-end",
+    "justify-center","justify-between","justify-start","justify-end",
+    // Responsive
+    "md:flex","md:hidden","md:block","md:grid","md:flex-row",
+    "sm:flex","sm:hidden","sm:block","sm:flex-row",
+    "lg:grid","lg:col-span-2","lg:flex",
+    // Spacing
+    "gap-1","gap-2","gap-3","gap-4","gap-5","gap-6","gap-8","gap-10","gap-12",
+    "px-4","px-5","px-6","px-8","px-10","py-2","py-3","py-4","py-5","py-6","py-8","py-16","py-24",
+    "pt-20","pt-24","pb-6","pb-8","mb-1","mb-2","mb-4","mb-6","mb-8","mb-10","mb-16","mt-1","mt-2","mt-8","mt-16",
+    // Sizing
+    "w-full","w-px","w-1","w-5","w-7","w-8","w-10","w-24","w-48","w-72","w-96",
+    "h-px","h-1","h-8","h-12","h-24","h-48","h-screen","min-h-screen",
+    "max-w-xs","max-w-sm","max-w-md","max-w-lg","max-w-xl","max-w-2xl","max-w-4xl",
+    // Typography
+    "text-xs","text-sm","text-base","text-lg","text-xl","text-2xl","text-4xl","text-5xl","text-7xl",
+    "font-medium","font-semibold","font-bold",
+    "text-center","text-left","text-right",
+    "uppercase","lowercase","tracking-wide","tracking-widest","leading-relaxed","leading-tight",
+    // Colors
+    "text-cream","text-white","text-gold","bg-brand-black","bg-transparent",
+    "text-cream/25","text-cream/30","text-cream/35","text-cream/40","text-cream/45","text-cream/50","text-cream/55","text-cream/60","text-cream/70","text-cream/80",
+    "text-gold/25","text-gold/30","text-gold/35","text-gold/40","text-gold/50","text-gold/60","text-gold/70","text-gold/80",
+    "bg-gold/3","bg-gold/4","bg-gold/5","bg-gold/8","bg-gold/10","bg-gold/15",
+    "bg-white/2","bg-white/3","bg-white/4","bg-white/5",
+    "border-gold/8","border-gold/10","border-gold/12","border-gold/15","border-gold/20","border-gold/25","border-gold/35",
+    // Rounded
+    "rounded","rounded-lg","rounded-xl","rounded-2xl","rounded-3xl","rounded-full",
+    // Overflow
+    "overflow-hidden","overflow-auto","overflow-x-hidden",
+    // Position helpers
+    "top-0","bottom-0","left-0","right-0","inset-0","z-40","z-50","z-[90]","z-[91]",
+    "-top-2","-right-2","-translate-x-1/2","-translate-y-1/2","translate-y-0","-translate-y-full",
+    "left-1/2","left-1/4","right-1/4","top-1/4","bottom-1/4","top-1/2",
+    // Transitions
+    "transition-all","transition-colors","transition-opacity","duration-200","duration-300",
+    "opacity-0","opacity-100",
+    // Cursor
+    "cursor-pointer",
+    // Backdrop
+    "backdrop-blur-sm","backdrop-blur",
+    // Antialiased
+    "antialiased",
+    // Rotate/scale
+    "rotate-45","-rotate-45","scale-x-0","scale-x-100",
+    // Group
+    "group","group-hover:opacity-100","group-hover:scale-x-100",
   ],
   theme: {
     extend: {
