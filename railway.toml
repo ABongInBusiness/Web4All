@@ -1,0 +1,21 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npx prisma generate && npx prisma migrate deploy && npm run build"
+
+[deploy]
+startCommand = "npm run start"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+healthcheckPath = "/api/health"
+
+[[crons]]
+name = "renewal-reminder"
+schedule = "0 3 * * *"
+path = "/api/cron/renewal-reminder"
+headers = { Authorization = "Bearer $CRON_SECRET" }
+
+[[crons]]
+name = "sla-check"
+schedule = "0 * * * *"
+path = "/api/cron/sla-check"
+headers = { Authorization = "Bearer $CRON_SECRET" }
