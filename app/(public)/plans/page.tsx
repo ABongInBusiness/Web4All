@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import PlansPageClient from "./PlansPageClient";
 
 export type BillingCycle = "monthly" | "annual";
 export type PlanId = "standard_pro" | "enterprise";
@@ -104,3 +106,17 @@ export const getAnnualMonthlySaving = (plan: IPlan): number => {
   if (!plan.monthlyPrice || !plan.annualPrice) return 0;
   return plan.monthlyPrice * 12 - plan.annualPrice;
 };
+
+// ─── Page Metadata ────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: "Plans & Pricing",
+  description:
+    "Simple, transparent pricing. Get your website live in 24 hours with Web4All.in.",
+};
+
+// ─── Page Component ───────────────────────────────────────────────────────────
+
+export default function PlansPage() {
+  return <PlansPageClient />;
+}
