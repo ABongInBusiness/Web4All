@@ -1,7 +1,6 @@
-// lib/auth.ts
-// TODO: Paste the code from Claude Project Tanjun artifacts
-// Reference: conversation "Project Tanjun — Web4All.in"
+import NextAuth from "next-auth";
+import GitHub from "next-auth/providers/github";
 
-export default function Placeholder() {
-  return null
-}
+export const { handlers, auth, signIn, signOut } = NextAuth({
+  providers: [GitHub],
+});
